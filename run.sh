@@ -14,6 +14,7 @@ then
 elif [[ $1 == "prod" ]]
 then
 	cd ./todoshnik/todoshnik_frontend/
+	npm install
 	npm run build
 	cd ../
 	python ./manage.py makemigrations
