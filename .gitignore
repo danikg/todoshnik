@@ -1,0 +1,15 @@
+# JavaScript
+node_modules/
+package-lock.json
+
+# Python
+__pycache__
+*.pyc
+Pipfile.lock
+
+# Django
+*.sqlite3
+
+# Env
+.vscode/
+start.sh

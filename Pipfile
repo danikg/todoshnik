@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+autopep8 = "*"
+
+[packages]
+djangorestframework = "==3.11"
+django = "==3"
+djangorestframework-simplejwt = "*"
+
+[requires]
+python_version = "3.8"
