@@ -7,6 +7,7 @@ Simple todo app
     ```bash
     $ pip install pipenv
     $ pipenv shell
+    $ pipenv update
     $ chmod +x run.sh
     $ ./run.sh prod 127.0.0.1:8000
     ```
