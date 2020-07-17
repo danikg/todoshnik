@@ -1,6 +1,7 @@
 # JavaScript
 node_modules/
 package-lock.json
+todoshnik/todoshnik_frontend/static/frontend/main.js
 
 # Python
 __pycache__

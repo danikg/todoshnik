@@ -51,7 +51,10 @@ class Drawer extends Component {
                             <ListItem
                                 button
                                 onClick={() =>
-                                    window.open("https://github.com/danikg/", "_blank")
+                                    window.open(
+                                        "https://github.com/danikg/todoshnik/",
+                                        "_blank"
+                                    )
                                 }
                             >
                                 <ListItemIcon>
