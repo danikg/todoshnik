@@ -2,9 +2,8 @@ from django.urls import path
 from rest_framework.routers import DefaultRouter
 from rest_framework_simplejwt import views as jwt_views
 
-from .views import (TodoListApiView, TodoItemApiView,
-                    TodoListItemsView, get_colors, UserView,)
-
+from .views import (TodoItemApiView, TodoListApiView, TodoListItemsView,
+                    UserView, get_colors)
 
 router = DefaultRouter()
 router.register('todo_lists', TodoListApiView, 'todo_list')
