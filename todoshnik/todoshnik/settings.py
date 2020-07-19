@@ -107,3 +107,30 @@ SIMPLE_JWT = {
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
     'ROTATE_REFRESH_TOKENS': True,
 }
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+        'debug_to_file': {
+            'level': 'WARNING',
+            'class': 'logging.FileHandler',
+            'filename': '/tmp/todoshnik.log',
+        }
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+        'django.request': {
+            'handlers': ['debug_to_file'],
+            'level': 'WARNING',
+            'propagate': False,
+        }
+    }
+}
